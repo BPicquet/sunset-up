@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-responsive.css">
+</head>
+<body>
+    <div class="top-page">
+        <header>
+            <div>
+                <img src="./style/img/SUNSET'UP LOGO.png" alt="">
+                <span class="vertical-line"></span>
+                <p>Juin 25-26 & 27</p>
+            </div>
+
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./line-up.html">Line-up</a>
+                <a href="./tickets.html">Tickets</a>
+                <a href="./promo.html">Promo</a>
+                <a href="infos.html">Infos</a>
+                <a href="contact.html" class="en-cours">Contact</a>
+            </nav>
+            
+            <div class="burger">
+                <span></span>
+            </div>
+            
+        </header>
+        
+         <div>
+            <nav class="burgerMenu">
+                    <a href="./index.html">Home</a>
+                    <a href="./line-up.html">Line-up</a>
+                    <a href="./tickets.html">Tickets</a>
+                    <a href="./promo.html">Promo</a>
+                    <a href="infos.html">Infos</a>
+                    <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <section class="banner-contact">
+            <div>
+                <h1>Contact - Sunset'UP</h1>
+                <p>Vous pouvez grâce à cet rubrique, contacter <br>
+                    notre équipe, lire la F.A.Q et vous inscrire à la newsletter !</p>
+            </div>
+            <img src="./style/img/contact-banner.png" alt="">
+        </section>
+
+        <section class="rediriger">
+            <p>Avancer vers:</p>
+            <div>
+                <a href="#contact-form">Contact</a>
+                <a href="#contact-faq">F.A.Q</a>
+                <a href="#contact-newsletter">Newsletter</a>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="contact">
+        <div>
+            <h1 id="contact-form">Vous souhaitez nous contacter ?</h1>
+            <p>Veuillez renseigner les champs ci-dessous</p>
+        </div>
+        <div>
+            <p>Contacter-nous</p>
+            <form method="POST" action="./mail.php">
+                <input class="input" type="text" placeholder="Name" required>
+                <input class="input" type="text" placeholder="Email" required>
+                <input class="input" type="text" placeholder="Object" required>
+                <textarea type="text" name="message" placeholder="Description" required></textarea>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div>
+            <h1 id="contact-faq">Frequently Asked Questions</h1>
+            <p>Tickets/ Horaires/ Logement/ Line-up ...</p>
+        </div>
+        <div>
+            <details>
+                <summary>Où puis-je me garer ?</summary>
+                Le festival se déroule sur la plage, il suffit de se rendre à la plage de la Marenda. De nombreux panneaux sont présent pour vous guider une fois dans Argelès-sur-Mer. 
+            </details>
+            <details>
+                <summary>Où puis-je me garer ?</summary>
+                De nombreux parking sont installés pour l’événement. Sinon les parking du festival son gratuit, si vous avez en votre possession un ticket.
+            </details>
+            <details>
+                <summary>Puis-je me restaurer sur place ?</summary>
+                Oui, de nombreux food trucs et bars sont installer dans le festival pour vous garantir un événement tout confort. De plus une formule petit déjeuner est disponible dans le camping du festival de 8h à 13h. 
+            </details>
+            <details>
+                <summary>Quelles sont les moyens de paiement dans le festival ?</summary>
+                Nous acceptons uniquement les cartes bancaires ou les bracelet cash-less disponible à l’entrée du festival, et rechargeable gratuitement directement via votre mobile. 
+            </details>
+            <details>
+                <summary>J’ai acheter un billet mais je ne peux pas me rendre au festival, que faire ? </summary>
+                Vous pouvez vous faire rembourser jusqu’a 2 semaines avant le début du festival. Passé ce délai, vous pouvez toujours vendre votre ticket, il ne sont pas nominatifs. 
+            </details>
+            <details>
+                <summary>Quels objets sont autorisés ?</summary>
+                Tout objets aérosols, bouteilles en verre, armes, stupéfiants, parfums sont interdits sur le festival. Tous le reste est autorisé. L’alcool est interdit dans le festival, mais reste autorisé dans le camping seulement si il n’est pas contenue dans une bouteille en verre. 
+            </details>
+            <details>
+                <summary>Une fois à l’intérieur du site du festival, puis-je ressortir ?</summary>
+                Non, toute sortie du site du festival est définitive sauf pour les campeurs équipés de leurs bracelets.
+            </details>
+            <details>
+                <summary>Je n’ai pas trouver la réponse à ma question, comment puis-je vous contacter ?</summary>
+                Vous pouvez nous contacter à l’adresse mail suivante : sunsetupfestival@gmail.fr.
+            </details>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div>
+            <h1 id="contact-newsletter">Newsletter</h1>
+            <p>Pour recevoir toutes les nouveautées liées au Festival</p>
+        </div>
+        <div>
+            <div>
+                <p>S'inscrire à la newsletter</p>
+                <form method="POST" action="./mail.php">
+                    <input class="input" type="text" placeholder="Nom" required>
+                    <input class="input" type="text" placeholder="Prénom" required>
+                    <input class="input" type="text" placeholder="Mail" required>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+            <img src="./style/img/photo-people-newsletter.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h1>Sunset'up</h1>
+            <a href="./contact.html?#contact-newsletter">S'inscrire à la Newsletter</a>
+        </div>
+        <div class="social-network">
+            <a href="https://www.facebook.com/sunset.up.98"><img src="./style/img/facebook.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCfOpIuMJjRzw-r3Rvg00M6g/featured?disable_polymer=1"><img src="./style/img/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/sunsetupfestival/?hl=fr"><img src="./style/img/instagram.png" alt=""></a>
+        </div>
+        <hr>
+        <div class="footer-infos">
+            <p>@Copyright Site 2020</p>
+            <p>Site créé par Créacom</p>
+        </div>
+        <div class="footer-liens">
+            <a href="./contact.html?#contact-form">Contact</a>
+            <a href="">Conditions générales</a>
+            <a href="./infos.html?#info-partenaires">Partenaires</a>
+            <a href="./promo.html?#promo-dossier-de-presse">Presse</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

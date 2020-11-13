@@ -1,0 +1,1015 @@
+
+@font-face{
+    font-family: Poppins;
+    src: url(./Poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url(./Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "dancing script";
+    src: url(./Dancing_Script/static/DancingScript-Bold.ttf);
+    font-weight: 900;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FCF8EF;
+    font-family: poppins, 'sans-serif';
+}
+
+.top-page{
+    min-height: 100vh;
+}
+
+                                /* HOME PAGE */
+
+        /* Partie Header */
+
+.en-cours{ /* Indique la page sur laquelle l'utilisateur se trouve */
+    text-decoration: underline;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px 20px 20px;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header > div > img{
+    width: 10vh;
+}
+
+.vertical-line{
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+}
+
+header > nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 1s text-decoration;
+    padding: 10px;
+}
+
+header > nav a:hover{
+    text-decoration: underline;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+        /* Partie Banner */
+
+.home-photo{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-video{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-video p{
+    font-size: 7rem;
+    font-family: 'dancing script';
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    color: black;
+    font-weight: 900;
+    top: 25%;
+    left: 8%;
+    display: none;
+}
+
+.banner-video video{
+    border: 0;
+    width: 100%;
+}
+
+        /* Partie compteur */   
+
+.compteur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.compteur img:nth-child(1){
+    width: 40%;
+    height: 60%;
+    margin-left: -150px;
+}
+
+.transat-compteur{
+    width: 15%;
+    height: 30%;
+    margin-top: 20%;
+}
+
+.compteur > div{
+    text-align: center;
+    margin-left: -10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.compteur > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.compteur > div > div p{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 1.3rem;
+}
+
+.compteur > div > div > p{
+    font-size: 1.4rem;
+    color: #FFB483;
+    margin-top: 10px;
+}
+
+.jour, .heure, .minute, .seconde{
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: #FFB483;
+}
+
+.compteur > div > p:nth-child(1){
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+button{
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    background-color: #80A3F9;
+    border-radius: 50px;
+    border: 1px solid #80A3F9;
+    color: white;
+    cursor: pointer;
+    font-weight: 550;
+    box-shadow: 1px 1px 1px black;
+    transition: 1s box-shadow;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+
+        /* Partie News de la page home */
+
+.news-home > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.button-news{
+    border-color: #FF4B49;
+    background-color: #FF4B49;
+}
+
+.news-home > div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-news{
+    background-image: url("./img/lomepal-news-home.jpg");
+    border-radius: 10px;
+    width: 45vh;
+    height: 30vh;
+    background-size: 120%;
+    box-shadow: 1px 1px 1px black;
+}
+
+.news2{
+    background-image: url(./img/accessoires.jpg);
+}
+
+.news3{
+    background-image: url(./img/biere.jpg);
+}
+
+.news-hidden{
+    font-size: 0.9rem;
+    opacity: 0;
+    color: black;
+    background-color: white;
+    border-radius: 4%;
+    width: 45vh;
+    height: 30vh;
+    transition: opacity 0.7s, background-color 0.7s;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-hidden:hover{
+    opacity: 0.8;
+}
+
+.news-hidden > h1{
+    padding-left: 15px;
+}
+
+.news-hidden > p{
+    padding-left: 30px;
+}
+
+.news-hidden > a{
+    padding-left: 200px;
+    text-decoration: underline;
+    color: #80A3F9;
+    font-size: 0.8rem;
+}
+
+        /* Partie Line-up */
+
+.lineup-home{
+    margin-top: 100px;
+}
+
+.lineup-home > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.lineup-home > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.button-lineup{
+    background-color: #FFB483;
+    border-color: #FFB483;
+}
+
+.container-lineup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.container-lineup img{
+    width: 45vh;
+    border-radius: 15%;
+}
+
+.container-lineup a{
+    text-decoration: underline;
+    color: #80A3F9;
+    float: right;
+    font-size: 0.8rem;
+}
+
+/* Partie footer */
+
+footer > div:nth-child(1){
+    margin: 70px 150px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1{
+    font-family: dancing script;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+footer a{
+    text-decoration: underline;
+    color: black;
+}
+
+.social-network{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-network a{
+    margin: 1px 6px;
+}
+
+.social-network img{
+    width: 5vh;
+    height: 5vh;
+    transition: 0.7s width, 0.7s height;
+}
+
+.social-network img:hover{
+    width: 6vh;
+    height: 6vh;
+}
+
+hr{
+    margin: 20px auto;
+    width: 35%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+footer > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-infos p{
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.footer-liens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-liens a{
+    margin: 0 10px 20px 10px;
+}
+
+                                /* LINE-UP PAGE */
+
+        /* Partie top page:bonenr */
+
+.banner-toppage-lineup{
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-toppage-lineup img{
+    margin-top: 10px;
+    width: 55vh;
+    transition: 1s transform;
+}
+
+.banner-toppage-lineup img:hover{
+    transform: rotate(180deg);
+}
+
+.banner-toppage-lineup h1{
+    font-size: 3.5rem;
+    text-transform: uppercase
+}
+
+.banner-toppage-lineup p{
+    margin-top: -30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+        /* Contenue artistes */
+
+.artisteImg {
+    width: 400px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artistes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.artistes div {
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.artistes p {
+    color: white;
+    background-color: black;
+    opacity: 70%;
+    display: block;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    padding: 35px;
+    margin-top: 0px;
+    padding-bottom: 113px;
+    padding-top: 127px;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.artistes p:hover {
+    opacity: 70%;
+}
+
+#intro h2 {
+    display: flex;
+    margin-top: 300px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+#intro p {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+#menu-lineup {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#menu-lineup a {
+    display: flex;
+    padding: 20px;
+    color: white;;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: #FFB483;
+    border-radius: 30px;
+}
+
+#menu-lineup a:hover {
+    color: black;
+    background-color: #80A3F9;
+}
+
+
+
+                                /* TICKETS PAGE */
+
+        /* Partie Banner */
+
+.banner-tickets{
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-tickets img{
+    width: 60vh;
+    transition: 1s transform;
+}
+
+.banner-tickets img:hover{
+    transform: rotate(180deg);
+}
+
+.banner-tickets h1{
+    font-size: 3.5rem;
+    text-transform: uppercase
+}
+
+.banner-tickets p{
+    margin-top: -30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+        /* Partie rediriger */
+
+.rediriger{
+    text-transform: uppercase;
+    margin: 0 0 50px 150px;
+}
+
+.rediriger p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: -2px;
+}
+
+.rediriger a{
+    color: black;
+    margin-left: 4px;
+}
+
+        /* Partie Tickets festival */
+
+.tickets-festival, .tickets-camping{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tickets-festival img{
+    width: 45vh;
+    height: 40vh;
+    margin: 100px -100px 0 0;
+}
+
+.container-ticket-festival{
+    margin-right: 80px;
+}
+
+.container-ticket-festival h1{
+    font-size: 3.5rem;
+    margin-bottom: -60px;
+    margin-left: -6px;
+}
+
+.content-ticket{
+    margin-top: 80px;
+}
+
+.line-dessus{
+    width: 30%;
+    height: 3px;
+    margin-bottom: 30px;
+}
+
+.line-singleday{
+    background-color: #FF534E;
+}
+
+.line-threeday{
+    background-color: #FF8E6D;
+}
+
+.line-vip{
+    background-color: #F1AC7D;
+}
+
+.line-tente{
+    background-color: #4CD9F4;
+}
+
+.line-camping-car{
+    background-color: #B91FFF;
+}
+
+.line-dessous{
+    width: 110%;
+    height: 2px;
+    margin: 30px 0;
+    background-color: black;
+}
+
+.content-ticket h2{
+    margin: 0;
+}
+
+.content-ticket p{
+    margin-bottom: 10px;
+}
+
+.bouton-reserver1{
+    background-color: #FF534E;
+    border-color: #FF534E;
+    margin-bottom: 30px;
+}
+
+.bouton-reserver2{
+    background-color: #FF8E6D;
+    border-color: #FF8E6D;
+    margin-bottom: 30px;
+}
+
+.bouton-reserver3{
+    background-color: #F1AC7D;
+    border-color: #F1AC7D;
+    margin-bottom: 30px;
+}
+
+.bouton-reserver4{
+    background-color: #4CD9F4;
+    border-color: #4CD9F4;
+    margin-bottom: 30px;
+}
+
+.bouton-reserver5{
+    background-color: #B91FFF;
+    border-color: #B91FFF;
+    margin-bottom: 30px;
+}
+
+.tickets-camping img{
+    margin-top: 170px;
+    height: 30vh;
+    margin-right: -50px;
+}
+
+                                /* Promo PAGE */        
+
+        /* Partie Banner */
+
+.banner-promo{
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-promo img{
+    margin-top: 10px;
+    width: 55vh;
+    transition: 1s transform;
+}
+
+.banner-promo img:hover{
+    transform: rotate(180deg);
+}
+
+.banner-promo h1{
+    font-size: 3.5rem;
+    text-transform: uppercase
+}
+
+.banner-promo p{
+    margin-top: -30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+        /* Partie contenu */
+    
+.carte-festival{
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-festival > img{
+    width: 100%;
+}
+
+.dossier-de-presse-festival{
+    display: flex;
+    flex-direction: column;
+}
+
+.dossier-de-presse-festival > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.affiche-festival > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.affiche-festival img{
+    width: 60%;
+    height: 40%;
+}
+
+.communique-de-presse > div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.communique-de-presse > div:nth-child(2) img{
+    width: 60vh;
+    min-width: 30vh;
+}
+
+.video-festival > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 200px 0;
+    position: relative;
+}
+.video-festival > div:nth-child(2) > iframe{
+    top: 0; 
+    left: 0; 
+    width: 70%; 
+    height: 40rem; 
+    border: 0;
+}
+
+
+
+                                /* INFOS PAGE */
+
+        /* Partie Banner */
+
+.banner-infos{
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-infos img{
+    margin-top: 10px;
+    width: 55vh;
+    transition: 1s transform;
+}
+
+.banner-infos img:hover{
+    transform: rotate(180deg);
+}
+
+.banner-infos h1{
+    font-size: 3.5rem;
+    text-transform: uppercase
+}
+
+.banner-infos p{
+    margin-top: -30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+        /* C'est quoi ? */
+
+.cest-quoi > p{
+    margin: 40px 50px 0 50px;
+}
+
+        /* Partie Comment venir ? */
+
+.presentation-grille img{
+    width: 50%;
+}
+
+.presentation-grille{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px 0px 50px 50px;
+}
+
+.presentation-grille div{
+    margin: 30px;
+}
+
+        /* Partie Règles */
+
+.regles > div:nth-child(2){
+    margin: 50px 0 50px 50px;
+}
+        
+.regles details{
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+        /* Accessibilité PMR */
+
+.accessibilite-pmr > div:nth-child(2){
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.accessibilite-pmr > div:nth-child(2) > div{
+    margin-left: 50px;
+}
+
+.accessibilite-pmr a{
+    color: black;
+}
+
+.accessibilite-pmr li{
+    margin-left: 35px;
+}
+
+.accessibilite-pmr img{
+    width: 40%;
+}
+
+    /* Services */
+
+
+    /* Partenaires */
+
+.partenaires > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partenaires img{
+    margin: 40px;
+    width: 18vh;
+}
+
+                                /* CONTACT PAGE */
+
+        /* Partie Banner */
+
+.banner-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+        
+.banner-contact img{
+    width: 60vh;
+    transition: 1s transform;
+}
+        
+.banner-contact img:hover{
+    transform: rotate(180deg);
+}
+        
+.banner-contact h1{
+    font-size: 3.5rem;
+    text-transform: uppercase
+}
+        
+.banner-contact p{
+    margin-top: -30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+        
+        /* Partie Contact */
+
+.contact h1, .faq h1, .newsletter h1, .comment-venir h1, .cest-quoi h1, .regles h1, .accessibilite-pmr h1, .services h1, .partenaires h1, .container-promo h1{
+    font-size: 3rem;
+    margin: 100px 0 0 50px;
+    text-transform: uppercase;
+}
+
+.contact div:nth-child(1) p, .faq div:nth-child(1) p, .newsletter > div:nth-child(1) > p, .comment-venir > div:nth-child(1) > p, .cest-quoi > div:nth-child(1) > p, .regles > div:nth-child(1) > p, .accessibilite-pmr > div:nth-child(1) > p, .services > div:nth-child(1) > p, .partenaires > div:nth-child(1) > p, .container-promo > div:nth-child(1) > p{
+    margin: -2px 0 0 80px;
+}
+
+.contact > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact > div:nth-child(2) p{
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input{
+    border: 1px black solid;
+    box-shadow: none;
+    margin: 10px;
+    width: 320px;
+    height: 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+form textarea{
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 320px;
+    height: 150px;
+    resize: none;
+    padding: 6px 0 0 5px;
+    border-radius: 10px;
+    border: 1px black solid;
+    font-family: Poppins;
+}
+
+.form ::placeholder{
+    font-size: 1rem;
+}
+
+.submit{
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    background-color: #FF8E6D;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    transition: color 0.5s, background-color 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit:hover{
+    color: black;
+    background-color: #FF534E;
+}
+
+        /* Partie F.A.Q */
+
+summary{
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.faq > div:nth-child(2){
+    margin: 50px 0 50px 50px;
+}
+
+.faq details{
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+        /* Partie Newsletter */
+
+.newsletter img{
+    width: 40%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.newsletter div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.newsletter div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter div:nth-child(2) form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter div:nth-child(2)  >  div > p{
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+

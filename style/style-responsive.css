@@ -1,0 +1,261 @@
+@media screen and (max-width: 1000px){
+    
+    /* Menu Burger */
+    
+    .burger {
+        width: 42px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .burger span {
+        width: 100%;
+        height: 4px;
+        background-color: #000000;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 5px;
+    }
+
+    .burger span::before, .burger span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #000000;
+        border-radius: 5px;
+    }
+
+    .burger span::before {
+        transform: translateY(-10px);
+    }
+
+    .burger span::after {
+        transform: translateY(10px);
+    }
+
+    .burger.active span {
+        background-color: transparent;
+    }
+
+    .burger.active span::before {
+        transform: translateY(0px) rotateZ(45deg);
+    }
+
+    .burger.active span::after{
+        transform: translateY(0px) rotateZ(-45deg);
+    }
+
+    .burgerMenu.active {
+        display: block;
+    }
+
+    .burgerMenu {
+        display: none;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+
+    .burgerMenu a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: 1s text-decoration;
+        border-bottom: 1px solid black;
+        list-style-type: none; 
+        display: list-item;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .burgerMenu a:hover{
+        text-decoration: underline;
+    }
+    
+    header > nav a {
+        display: none;
+    }
+    
+    /* Home page */
+
+    .top-page{
+        margin-bottom: -50px;
+    }
+
+    .banner-video > p{
+        font-size: 3rem;
+    }
+
+    .compteur img {
+       visibility: hidden;
+    }
+
+    .compteur > div{
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .news-home > div:nth-child(2){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-news{
+        margin: 20px 0;
+    }
+
+    .container-lineup{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lineup2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 30px 0;
+    }
+
+    /* Line-up Page */
+    .banner-toppage-lineup img{
+        display: none;
+    }
+    
+    #intro-img img {
+        display: none;
+    }
+    
+    #intro-text p {
+        margin-bottom: 170px;
+    }
+
+    #menu-lineup{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-lineup a{
+        margin: 10px;
+    }
+
+    /* Promo page */
+
+    .dossier-de-presse-festival > div:nth-child(2) > object{
+        width: 400px;
+        height: 600px;
+    }
+
+    /* Tickets Page */
+
+    .banner-tickets img{
+        display: none;
+    }
+
+    .tickets-festival, .tickets-camping{
+        margin-left: 20px;
+    }
+
+    .tickets-festival img, .tickets-camping img{
+        display: none;
+    }
+    
+      /* Tickets Page */
+
+    .banner-promo img{
+        display: none;
+    }
+
+        /* Infos Page */
+    
+    .banner-infos img{
+        display: none;
+    }
+
+    .accessibilite-pmr img{
+        display: none;
+    }
+
+        /* Contact page */
+    
+    .banner-contact img{
+        display: none;
+    }
+
+    .newsletter img{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 450px){
+    
+    body{
+        margin: 2px
+    }
+    /* Home page */
+
+    .top-page{
+        min-height: 0vh;
+        margin-bottom: 20px;
+    }
+    
+    .compteur{
+        margin-left: 50px
+    }
+
+    .compteur > div div p{
+        font-size: 1rem;
+    }
+
+    .footer-liens{
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    /* Line-up page */
+
+    /* Promo page */
+
+ 
+
+    /* Infos page */
+
+    .accessibilite-pmr > div:nth-child(2) > div{
+        margin: 0;
+    }
+
+    /* Tickets page */
+
+    .rediriger{
+        display: none;
+    }
+
+    /* Contact page */
+
+    .contact h1, .faq h1, .newsletter h1, .comment-venir h1, .cest-quoi h1, .regles h1, .accessibilite-pmr h1, .services h1, .partenaires h1, .container-promo h1{
+        font-size: 2rem;
+        margin: 70px 0 0 10px;
+        text-transform: uppercase;
+    }
+    
+    .contact div:nth-child(1) p, .faq div:nth-child(1) p, .newsletter > div:nth-child(1) > p, .comment-venir > div:nth-child(1) > p, .cest-quoi > div:nth-child(1) > p, .regles > div:nth-child(1) > p, .accessibilite-pmr > div:nth-child(1) > p, .services > div:nth-child(1) > p, .partenaires > div:nth-child(1) > p, .container-promo > div:nth-child(1) > p{
+        margin: -2px 0 0 30px;
+    }
+}

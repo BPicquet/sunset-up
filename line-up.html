@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-up</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-responsive.css">
+</head>
+<body>
+    <div class="top-page toppage-lineup">
+        <header>
+            <div>
+                <img src="./style/img/SUNSET'UP LOGO.png" alt="">
+                <span class="vertical-line"></span>
+                <p>Juin 25-26 & 27</p>
+            </div>
+
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./line-up.html" class="en-cours" >Line-up</a>
+                <a href="./tickets.html">Tickets</a>
+                <a href="./promo.html">Promo</a>
+                <a href="./infos.html">Infos</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            
+            <div class="burger">
+                <span></span>
+            </div>
+            
+        </header>
+        
+         <div>
+            <nav class="burgerMenu">
+                    <a href="./index.html">Home</a>
+                    <a href="./line-up.html">Line-up</a>
+                    <a href="./tickets.html">Tickets</a>
+                    <a href="./promo.html">Promo</a>
+                    <a href="infos.html">Infos</a>
+                    <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        
+        <section class="banner-toppage-lineup">
+            <div>
+                <h1>Line-up - Sunset'UP</h1>
+                <p>Voici la liste des artistes présents <br>
+                    au Sunset'up festival 2020 !</p>
+            </div>
+            <img src="./style/img/audio-play.png" alt="">
+        </section>
+        
+    </div>
+
+    <section class="banner-lineup">
+        <div>
+        <div id="menu-lineup">
+            <a href="#" title="Tout les artistes" onclick="tous(event);">Tout les artistes</a>
+            <a href="#" title="Vendredi 2 Juillet" onclick="vendredi(event);">Vendredi 2 Juillet</a>
+            <a href="#" title="Samedi 3 Juillet" onclick="samedi(event);">Samedi 3 Juillet</a>
+            <a href="#" title="Dimanche 4 Juillet" onclick="dimanche(event);">Dimanche 4 Juillet</a>
+        </div>
+    </div>
+    
+    <div class="artistes" id="artistes">
+        <div class="therapie" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/TerapieTaxi.jpg');">
+                <div>
+                    <p>Thérapie Taxi</p>
+                </div>
+            </div>
+        </div>
+        <div class="lomepal" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Lomepal.jpg');">
+                <div>
+                    <p>Lomepal</p>
+                </div>
+            </div>
+        </div>
+        <div class="tryo" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Tryo.jpg');">
+                <div>
+                    <p>Tryo</p>
+                </div>
+            </div>
+        </div>
+        <div class="alpha" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/AlphaBlondy.jpeg');">
+                <div>
+                    <p>Alpha Blondy</p>
+                </div>
+            </div>
+        </div>
+        <div class="biscuit" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/PetitBiscuit.jpg');">
+                <div>
+                    <p>Petit Biscuit</p>
+                </div>
+            </div>
+        </div>
+        <div class="entendeur" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/BonEntendeur.jpg');">
+                <div>
+                    <p>Bon Entendeur</p>
+                </div>
+            </div>
+        </div>
+        <div class="angele" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/Angele.jpg');">
+                <div>
+                    <p>Angele</p>
+                </div>
+            </div>
+        </div>
+        <div class="dinos" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/Dinos.jpg');">
+                <div>
+                    <p>Dinos</p>
+                </div>
+            </div>
+        </div>
+        <div class="dore" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/JulienDore.jpg');">
+                <div>
+                    <p>Julien Doré</p>
+                </div>
+            </div>
+        </div>
+        <div class="dubinc" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/DubInc.jpg');">
+                <div>
+                    <p>Dub Inc</p>
+                </div>
+            </div>
+        </div>
+        <div class="izia" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Izia.jpeg');">
+                <div>
+                    <p>Izia</p>
+                </div>
+            </div>
+        </div>
+        <div class="blazes" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/TheBlades.jpg');">
+                <div>
+                    <p>The Blazes</p>
+                </div>
+            </div>
+        </div>
+        <div class="jahneration" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/jahneration.jpg');">
+                <div>
+                    <p>Jahneration</p>
+                </div>
+            </div>
+        </div>
+        <div class="laffut" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/ClaireLaffut.jpg');">
+                <div>
+                    <p>Claire Laffut</p>
+                </div>
+            </div>
+        </div>
+        <div class="plum" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/PL%C3%9CM.jpg');">
+                <div>
+                    <p>PLÜM</p>
+                </div>
+            </div>
+        </div>
+        <div class="naaman" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/Naaman.jpg');">
+                <div>
+                    <p>Naaman</p>
+                </div>
+            </div>
+        </div>
+        <div class="fraicheur" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/LaFraicheur.jpg');">
+                <div>
+                    <p>La fraicheur</p>
+                </div>
+            </div>
+        </div>
+        <div class="ter" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/47Ter.jpg');">
+                <div>
+                    <p>47 ter</p>
+                </div>
+            </div>
+        </div>
+        <div class="le77" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Le77.jpg');">
+                <div>
+                    <p>Le 77</p>
+                </div>
+            </div>
+        </div>
+        <div class="luidji" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Luidji.jpeg');">
+                <div>
+                    <p>Luidji</p>
+                </div>
+            </div>
+        </div>
+        <div class="mellow" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/MellowMood.jpg');">
+                <div>
+                    <p>Mellow Mood</p>
+                </div>
+            </div>
+        </div>
+        <div class="lonepsi" style="display: none;"> 
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/Lonepsi.jpg');">
+                <div>
+                    <p>Lonepsi</p>
+                </div>
+            </div>
+        </div>
+        <div class="namic" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/Namic.jpeg');">
+                <div>
+                    <p>Namic</p>
+                </div>
+            </div>
+        </div>
+        <div class="pomme" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/Pomme.jpg');">
+                <div>
+                    <p>Pomme</p>
+                </div>
+            </div>
+        </div>
+        <div class="salut" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/SalutCestCool.jpg');">
+                <div>
+                    <p>Salut C'est Cool</p>
+                </div>
+            </div>
+        </div>
+        <div class="vitalic" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/vitalic.jpg');">
+                <div>
+                    <p>Vitalic</p>
+                </div>
+            </div>
+        </div>
+        <div class="pepite" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/Pepite.jpg');">
+                <div>
+                    <p>Pépite</p>
+                </div>
+            </div>
+        </div>
+        <div class="voyou" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Voyou.jpg');">
+                <div>
+                    <p>Voyou</p>
+                </div>
+            </div>
+        </div>
+        <div class="xad" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/vendredi/Xad.jpg');">
+                <div>
+                    <p>Xad</p>
+                </div>
+            </div>
+        </div>
+        <div class="sopico" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/Sopico.jpg');">
+                <div>
+                    <p>Sopico</p>
+                </div>
+            </div>
+        </div>
+        <div class="pirouettes" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/samedi/thePirouettes.jpg');">
+                <div>
+                    <p>The Pirouettes</p>
+                </div>
+            </div>
+        </div>
+        <div class="broussai" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/Broussai.jpg');">
+                <div>
+                    <p>Broussaï</p>
+                </div>
+            </div>
+        </div>
+        <div class="agar" style="display: none;">
+            <div class="artisteImg" style="background-image:url('Artistes/dimanche/AgarAgar.jpg');">
+                <div>
+                    <p>Agar Agar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <footer>
+        <div>
+            <h1>Sunset'up</h1>
+            <a href="./contact.html?#contact-newsletter">S'inscrire à la Newsletter</a>
+        </div>
+        <div class="social-network">
+            <a href="https://www.facebook.com/sunset.up.98"><img src="./style/img/facebook.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCfOpIuMJjRzw-r3Rvg00M6g/featured?disable_polymer=1"><img src="./style/img/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/sunsetupfestival/?hl=fr"><img src="./style/img/instagram.png" alt=""></a>
+        </div>
+        <hr>
+        <div class="footer-infos">
+            <p>@Copyright Site 2020</p>
+            <p>Site créé par Créacom</p>
+        </div>
+        <div class="footer-liens">
+            <a href="./contact.html?#contact-form">Contact</a>
+            <a href="">Conditions générales</a>
+            <a href="./infos.html?#info-partenaires">Partenaires</a>
+            <a href="./promo.html?#promo-dossier-de-presse">Presse</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
